@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Federant|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b859b2ffa.js" crossorigin="anonymous"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/smooth-scroll.min.js"></script> 
 </head>
 <body>
-    <header>
+    <header id="header">
         <div id="banner"> 
             <div id="navigation">
-                <div id="logo">Animal Hope</div>
+                <div id="logo"> <a data-scroll href="#header">Animal Hope</a></div>
                 <nav>                
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Refugios</a></li>
-                        <li><a href="#">Veterinarias</a></li>
-                        <li><a href="#">Foro</a></li>
+                        <li><a data-scroll href="#inicio">Inicio</a></li>
+                        <li><a data-scroll href="#info">Eventos</a></li>
+                        <li><a href="#row-2">Refugios</a></li>
+                        <li><a data-scroll href="#row-3">Veterinarias</a></li>
+                        <li><a data-scroll href="#row-3">Foro</a></li>
                     </ul>
                 </nav>
                 <form action="access.html">
@@ -31,9 +33,9 @@
             </div>
             <div id="intro">
                 <h1>Hola!</h1>
-                    <p>Si estas aquí es porque a igual que nosotros te gustan los animales y quieres ayudarlos.</p>
-                    <p>Te explicamos como a travéz de nuestras diferentes secciones</p>
-                    <i class="fas fa-arrow-circle-down"></i>
+                <p>Si estas aquí es porque a igual que nosotros te gustan los animales y quieres ayudarlos.</p>
+                <p>Te explicamos como a travéz de nuestras diferentes secciones</p>
+                <i class="fas fa-arrow-circle-down"></i>
             </div>
         </div>
     </header>   
@@ -47,13 +49,13 @@
         </div>
     </section>
     <section id="info">
-        <div class="row-1">
+        <div id="row-1">
             <div class="txt">
                 <h2>Eventos:</h2>
                 <p>En esta sección, encontraras información de interés como: jornadas de esterilización, adopción, vacunación y demás actividades programadas por los diferentes refugios o personas inscritas en esta pagina.</p>
             </div>
         </div>
-        <div class="row-2">
+        <div id="row-2">
             <div class="row-content">
                 <div class="text-info">
                     <h2>Refugios:</h2>
@@ -61,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="row-3">
+        <div id="row-3">
             <div class="row-content-3">
                 <div class="col1"></div>
                 <div class="col2"></div>
@@ -89,5 +91,8 @@
             <p>Diseñado y desarrollado por: <span>Cesar Gómez</span> & <span>Omar Jiménez</span></p>
         </div>
     </footer>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>

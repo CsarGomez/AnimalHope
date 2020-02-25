@@ -22,6 +22,10 @@ header{
     font-size: 1.5em;
     color: var(--white);
 }
+#logo a{
+    color: var(--white);
+    text-decoration: none;
+}
 #navigation{
     display: flex;
     flex-direction: row;
@@ -108,7 +112,7 @@ i.fa-arrow-circle-down{
     display: grid;
     grid-template-rows: repeat(3, 400px);
 }
-.row-1{
+#row-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,7 +126,7 @@ i.fa-arrow-circle-down{
     font-size: 2em;
     color: var(--white);
 }
-.row-2{
+#row-2{
     width: 100%;
     height: 400px;
     /*background-position: center;
@@ -153,7 +157,7 @@ i.fa-arrow-circle-down{
     color: var(--black);
     border-radius: 10px;
 }
-.row-3{
+#row-3{
     width: 100%;
     height: 100%;
     background-color: var(--darkWhite);
